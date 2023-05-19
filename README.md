@@ -10,7 +10,7 @@
 
 <br/>
 
-- [] 285. errorElement로 오류 페이지 표시하기
+- [x] 285. [errorElement로 오류 페이지 표시하기](https://github.com/chaehaeun/React-section20/issues/2)
 - [] 286. 네비게이션 링크 사용하기(NavLink)
 - [] 287. 프로그램적으로 네비게이션하기
 - [] 288. 동적 라우트 정의하고 사용하기
