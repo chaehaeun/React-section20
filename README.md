@@ -4,8 +4,8 @@
 
 - [x] 294. 연습 시간 : 해설
 - [x] [295. loader() 이용한 데이터 가져오기](https://github.com/chaehaeun/React-section20/commit/05a9e64fdca685d209af9adde78fd89f20e5cb63)
-- [x] 296. loader() 데이터를 라우트 컴포넌트에서 사용하기
-- [] 297. loader() 데이터의 다양한 활용법
+- [x] [296. loader() 데이터를 라우트 컴포넌트에서 사용하기](https://github.com/chaehaeun/React-section20/issues/3)
+- [x] 297. loader() 데이터의 다양한 활용법
 - [] 298. loader() 코드를 저장해야 하는 위치
 
 <br/>
