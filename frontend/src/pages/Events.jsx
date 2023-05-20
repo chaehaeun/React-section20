@@ -1,28 +1,13 @@
-import { useEffect, useState } from "react";
-
 import EventsList from "../components/EventsList";
+import { useLoaderData } from "react-router-dom";
+// useLoaderData : 가장 가까운 라우트의 loader 데이터를 가져오는 훅
 
 function EventsPage() {
-  const [isLoading, setIsLoading] = useState(false);
-  const [fetchedEvents, setFetchedEvents] = useState();
-  const [error, setError] = useState();
+  const fetchedEvents = useLoaderData();
 
-  useEffect(() => {
-    async function fetchEvents() {
-      setIsLoading(true);
-
-      setIsLoading(false);
-    }
-
-    fetchEvents();
-  }, []);
   return (
     <>
-      <div style={{ textAlign: "center" }}>
-        {isLoading && <p>Loading...</p>}
-        {error && <p>{error}</p>}
-      </div>
-      {!isLoading && fetchedEvents && <EventsList events={fetchedEvents} />}
+      <EventsList events={fetchedEvents} />
     </>
   );
 }
