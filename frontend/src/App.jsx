@@ -32,18 +32,24 @@ const router = createBrowserRouter([
           },
           {
             path: ":eventId",
-            element: <EventDetailPage />,
+            id: "event-detail",
             loader: eventDetailLoader,
+            children: [
+              {
+                index: true,
+                element: <EventDetailPage />,
+              },
+              {
+                path: "edit",
+                element: <EditEventPage />,
+              },
+            ],
           },
           {
             path: "new",
             // 이렇게 쓰면 new를 eventId로 인식해서 EventDetailPage로 가버릴 것이라 생각할 수 있지만
             // 리액트라우터는 똑똑이기 때문에 new 페이지로 갈 것임ㅇㅇ 신경 안 써도 됨
             element: <NewEventPage />,
-          },
-          {
-            path: ":eventId/edit",
-            element: <EditEventPage />,
           },
         ],
       },
